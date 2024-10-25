@@ -8,7 +8,7 @@ namespace entrevista_isoftware
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=127.0.0.1\sqlserver;Initial Catalog=master;DataBase=prueba;User ID=sa;Password=Nachoc04042017@;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Data Source=localhost;Initial Catalog=Entrevista;User ID=sa;Password=Nachoc04042017@;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Authentication=SqlPassword;Application Name=azdata;Command Timeout=30");
         }
     }
 }
