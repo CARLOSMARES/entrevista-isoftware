@@ -1,16 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using entrevista_isoftware;
 
-namespace entrevista_isoftware;
-
-public class MyDbContext
+namespace entrevista_isoftware
 {
-
-    public DbSet<User> Users { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    public class MyDbContext : DbContext // Add inheritance from DbContext
     {
-        optionsBuilder.UseSqlServer();
-    }
+        public DbSet<User> Users { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=127.0.0.1\sqlserver;Initial Catalog=master;DataBase=prueba;User ID=sa;Password=Nachoc04042017@;Trusted_Connection=True;");
+        }
+    }
 }
