@@ -10,6 +10,7 @@ public class User
 
     [Required]
     [StringLength(50)]
+    [MinLength(3)]
     public string? Nombre { get; set; }
 
     [Required]
