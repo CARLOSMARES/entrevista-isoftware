@@ -14,7 +14,7 @@ public class User
     public string? Nombre { get; set; }
 
     [Required]
-    public string? Edad { get; set; }
+    public int? Edad { get; set; }
 
     [Required]
     public string? Email { get; set; }
