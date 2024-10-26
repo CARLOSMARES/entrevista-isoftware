@@ -1,0 +1,82 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th,
+td {
+    border-collapse: collapse;
+    padding: 12px;
+    text-align: center;
+    border: 3px solid #ccc;
+}
+
+th:first-child,
+td:first-child {
+    width: 10%;
+    background-color: #f7f7f7;
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+    width: 30%;
+    background-color: #e8f4fc;
+}
+
+.editar {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.editar:hover {
+    background-color: #0056b3;
+}
+
+.eliminar {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: red;
+    /* Cambiado a rojo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.eliminar:hover {
+    background-color: darkred;
+}
+
+.nuevo {
+    margin-left: 80%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 8px 12px;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nuevo:hover {
+    background-color: beige;
+}
