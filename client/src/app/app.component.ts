@@ -45,7 +45,6 @@ export class AppComponent {
   }
 
   deleteUser(id: number) {
-    alert(id)
     this.apiService.deleteUser(id).subscribe((data) => {
       this.userData = this.userData.filter(user => user.userId !== id);
     });
